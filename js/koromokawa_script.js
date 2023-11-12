@@ -461,7 +461,7 @@ $(function() {
 
   function createMenuList(after_action) {
     // 備考データを読み込む
-    csvToArray("data/remarks/remarks.csv", function(data) {
+    csvToArray("data/remarks/koromokawa_remarks.csv", function(data) {
       data.shift();
       for (var i in data) {
         remarks.push(new RemarkModel(data[i]));
